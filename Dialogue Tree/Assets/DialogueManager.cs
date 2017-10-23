@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -24,7 +23,6 @@ public class DialogueManager : MonoBehaviour {
 	private Queue<string> dialogue;
 	private Queue<string> names;
 
-	// Use this for initialization
 	void Start () {
 		dialogue = new Queue<string>();
 		names = new Queue<string>();
@@ -36,19 +34,6 @@ public class DialogueManager : MonoBehaviour {
 		{
 			Destroy(this);
 		}
-	}
-
-	private void Update()
-	{
-		/*
-		if (inDialogue && !inChoice)
-		{
-			if (Input.GetKeyDown(KeyCode.Space))
-			{
-				NextDialogue();
-			}
-		}
-		*/
 	}
 
 	public void LoadDialogue(Dialogue dialogue)
@@ -114,6 +99,8 @@ public class DialogueManager : MonoBehaviour {
 		textBox.gameObject.SetActive(false);
 	}
 
+	#region Choices linked to UI buttons
+
 	public void Choice1()
 	{
 		dialogueCache = dialogueCache.choice1;
@@ -132,7 +119,9 @@ public class DialogueManager : MonoBehaviour {
 		LoadDialogue(dialogueCache);
 	}
 
-	private void RefreshTextBox()
+	#endregion
+
+	private void RefreshTextBox() //resets text box to default state
 	{
 		Debug.Log("Refreshing Text Box");
 		textBox.gameObject.SetActive(true);

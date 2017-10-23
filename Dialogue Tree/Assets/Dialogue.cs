@@ -1,8 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-//[System.Serializable]
 public class Dialogue : MonoBehaviour {
 
 	public bool hasChoice;
