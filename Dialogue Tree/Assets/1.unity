@@ -702,7 +702,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1313209466}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -47.29999, z: 0}
+  m_LocalPosition: {x: 0, y: -78.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1953103626}
@@ -713,8 +713,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0.0000061989, y: 12.850002}
-  m_SizeDelta: {x: -32.3, y: 49.399994}
+  m_AnchoredPosition: {x: 0.0000061989, y: 12.85}
+  m_SizeDelta: {x: -32.3, y: 30}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1313209468
 MonoBehaviour:
@@ -837,7 +837,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1379043099}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -91.375015, y: 38.249992, z: 0}
+  m_LocalPosition: {x: -156.375, y: 18.85, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1997120502}
@@ -959,7 +959,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1392081165}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 181.75, y: -47.29998, z: 0}
+  m_LocalPosition: {x: 246.74998, y: -78.499985, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1396934524}
@@ -1213,7 +1213,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1493303101}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.600006, y: 51.149994, z: 0}
+  m_LocalPosition: {x: -9.600006, y: 82.35, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1647039140}
@@ -1287,7 +1287,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1647039139}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -135.5, z: 0}
+  m_LocalPosition: {x: 0, y: -174.29999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1493303102}
@@ -1298,9 +1298,9 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -135.5}
-  m_SizeDelta: {x: -86.9, y: -314.7}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: 113.2}
+  m_SizeDelta: {x: -86.9, y: 182.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1647039141
 MonoBehaviour:
@@ -1360,7 +1360,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1736159593}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.149994, y: 38.249992, z: 0}
+  m_LocalPosition: {x: -48.849987, y: 18.85, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 145917936}
@@ -1581,7 +1581,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1953103625}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -127.216675, y: 38.249992, z: 0}
+  m_LocalPosition: {x: -192.21666, y: 18.85, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1319366478}
@@ -1979,7 +1979,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2130406587}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 258.5, y: 217.5, z: 0}
+  m_LocalPosition: {x: 323.5, y: 287.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1647039140}
@@ -2109,10 +2109,12 @@ MonoBehaviour:
   hasChoice: 1
   names:
   - Timmy
+  - Player
   - Timmy
   - Timmy
   dialogue:
   - Hello, I'm Timmy!
+  - Hello, Timmy!
   - Some people call me Tim.
   - I hate those people.
   choice1Text: Why?

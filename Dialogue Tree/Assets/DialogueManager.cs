@@ -56,13 +56,13 @@ public class DialogueManager : MonoBehaviour {
 
 	public void NextDialogue()
 	{
-		Debug.Log("Next Dialogue");
 		if (this.dialogue.Count <= 0)
 		{
 			Debug.Log("Ending Dialogue");
 			EndDialogue();
 			return;
 		}
+		Debug.Log("Next Dialogue");
 
 		if(this.dialogue.Count == 1 && dialogueCache.hasChoice) //enables choices if there are choices on the final dialogue text
 		{
@@ -121,7 +121,9 @@ public class DialogueManager : MonoBehaviour {
 
 	#endregion
 
-	private void RefreshTextBox() //resets text box to default state
+	//resets Text Box to default state
+	//By default, Text Box is disabled, all children of Text Box are enabled, and all children of Buttons are disabled
+	private void RefreshTextBox()
 	{
 		Debug.Log("Refreshing Text Box");
 		textBox.gameObject.SetActive(true);
