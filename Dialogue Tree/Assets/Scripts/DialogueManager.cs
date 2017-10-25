@@ -95,7 +95,11 @@ public class DialogueManager : MonoBehaviour {
 		}
 		string name = "";
 
-		name = names.Dequeue();
+		if (names.Count != 0)
+		{
+			name = names.Dequeue();
+		}
+
 		if (!name.Equals(""))
 		{
 			_name.text = name;
