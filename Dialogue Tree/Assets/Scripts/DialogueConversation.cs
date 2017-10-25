@@ -3,7 +3,7 @@
 [RequireComponent(typeof(Dialogue))]
 public class DialogueConversation : MonoBehaviour {
 
-	public Dialogue dialogue;
+	private Dialogue dialogue;
 
 	private bool trigger = false;
 
@@ -14,7 +14,6 @@ public class DialogueConversation : MonoBehaviour {
 	void Update () {
 		if (trigger && Input.GetKeyDown(KeyCode.Space) && !DialogueManager.dm.inDialogue)
 		{
-			Debug.Log("Load Dialogue");
 			DialogueManager.dm.LoadDialogue(dialogue);
 		}
 	}

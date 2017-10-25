@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -56,15 +57,13 @@ public class DialogueManager : MonoBehaviour {
 
 	public void NextDialogue()
 	{
-		if (this.dialogue.Count <= 0)
+		if (dialogue.Count <= 0)
 		{
-			Debug.Log("Ending Dialogue");
 			EndDialogue();
 			return;
 		}
-		Debug.Log("Next Dialogue");
 
-		if(this.dialogue.Count == 1 && dialogueCache.hasChoice) //enables choices if there are choices on the final dialogue text
+		if(dialogue.Count == 1 && dialogueCache.hasChoice) //enables choices if there are choices on the final dialogue text
 		{
 			inChoice = true;
 			continueButton.gameObject.SetActive(false);
@@ -89,8 +88,19 @@ public class DialogueManager : MonoBehaviour {
 			}
 		}
 
-		text.text = this.dialogue.Dequeue();
-		_name.text = this.names.Dequeue();
+		_name.text = names.Dequeue();
+		StopAllCoroutines();
+		StartCoroutine(TypeSentence(dialogue.Dequeue()));
+	}
+
+	IEnumerator TypeSentence(string sentence) //individually puts letters into text box
+	{
+		text.text = "";
+		foreach (char letter in sentence.ToCharArray())
+		{
+			text.text += letter;
+			yield return null;
+		}
 	}
 
 	public void EndDialogue()
@@ -125,7 +135,6 @@ public class DialogueManager : MonoBehaviour {
 	//By default, Text Box is disabled, all children of Text Box are enabled, and all children of Buttons are disabled
 	private void RefreshTextBox()
 	{
-		Debug.Log("Refreshing Text Box");
 		textBox.gameObject.SetActive(true);
 		continueButton.gameObject.SetActive(true);
 		choice1.gameObject.SetActive(false);
