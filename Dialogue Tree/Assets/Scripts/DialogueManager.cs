@@ -93,8 +93,14 @@ public class DialogueManager : MonoBehaviour {
 				continueButton.gameObject.SetActive(false);
 			}
 		}
+		string name = "";
 
-		_name.text = names.Dequeue();
+		name = names.Dequeue();
+		if (!name.Equals(""))
+		{
+			_name.text = name;
+		}
+
 		StopAllCoroutines();
 		StartCoroutine(TypeSentence(dialogue.Dequeue()));
 	}

@@ -2132,12 +2132,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c646c2590c6d2524ea5e829d9311ef22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasChoice: 0
   names:
   - Timmy
   - Player
   - Timmy
-  - Timmy
+  - 
   dialogue:
   - Hello, I'm Timmy!
   - Hello, Timmy!
