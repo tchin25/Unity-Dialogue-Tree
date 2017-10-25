@@ -63,28 +63,34 @@ public class DialogueManager : MonoBehaviour {
 			return;
 		}
 
-		if(dialogue.Count == 1 && dialogueCache.hasChoice) //enables choices if there are choices on the final dialogue text
+		if(dialogue.Count == 1) //enables choices if there are choices on the final dialogue text
 		{
-			inChoice = true;
-			continueButton.gameObject.SetActive(false);
 			//choices and load in next dialogue
 			//enable choice buttons
 			if (dialogueCache.choice1 != null)
 			{
 				choice1.gameObject.SetActive(true);
 				choice1.GetComponentInChildren<Text>().text = dialogueCache.choice1Text;
+				inChoice = true;
 			}
 
 			if (dialogueCache.choice2 != null)
 			{
 				choice2.gameObject.SetActive(true);
 				choice2.GetComponentInChildren<Text>().text = dialogueCache.choice2Text;
+				inChoice = true;
 			}
 
 			if (dialogueCache.choice3 != null)
 			{
 				choice3.gameObject.SetActive(true);
 				choice3.GetComponentInChildren<Text>().text = dialogueCache.choice3Text;
+				inChoice = true;
+			}
+
+			if (inChoice)
+			{
+				continueButton.gameObject.SetActive(false);
 			}
 		}
 

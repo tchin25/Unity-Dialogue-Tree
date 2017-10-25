@@ -2,8 +2,6 @@
 
 public class Dialogue : MonoBehaviour {
 
-	public bool hasChoice;
-
 	public string[] names;
 
 	[TextArea(3, 10)]

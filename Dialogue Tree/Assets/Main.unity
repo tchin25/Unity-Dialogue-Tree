@@ -1186,6 +1186,11 @@ Prefab:
       propertyPath: m_Name
       value: Okay
       objectReference: {fileID: 0}
+    - target: {fileID: 114612389820784706, guid: 23aab99ffc78724419f33a3ea39b5861,
+        type: 2}
+      propertyPath: hasChoice
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 23aab99ffc78724419f33a3ea39b5861, type: 2}
   m_IsPrefabParent: 0
@@ -2127,7 +2132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c646c2590c6d2524ea5e829d9311ef22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasChoice: 1
+  hasChoice: 0
   names:
   - Timmy
   - Player
@@ -2155,4 +2160,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d8de2bc97597f84fab922cfe5d00445, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 0}
