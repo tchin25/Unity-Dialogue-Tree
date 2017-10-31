@@ -16,4 +16,11 @@ public class Dialogue : MonoBehaviour {
 	public string choice3Text;
 	public Dialogue choice3;
 
+	public int choiceNumber;
+
+	public void EndChoice()
+	{
+		GetComponentInParent<DialogueConversation>().endChoice = choiceNumber;
+	}
+
 }

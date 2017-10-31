@@ -379,6 +379,11 @@ Prefab:
       propertyPath: m_Name
       value: Why?
       objectReference: {fileID: 0}
+    - target: {fileID: 114612389820784706, guid: 23aab99ffc78724419f33a3ea39b5861,
+        type: 2}
+      propertyPath: choiceNumber
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 23aab99ffc78724419f33a3ea39b5861, type: 2}
   m_IsPrefabParent: 0
@@ -1191,6 +1196,11 @@ Prefab:
       propertyPath: hasChoice
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114612389820784706, guid: 23aab99ffc78724419f33a3ea39b5861,
+        type: 2}
+      propertyPath: choiceNumber
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 23aab99ffc78724419f33a3ea39b5861, type: 2}
   m_IsPrefabParent: 0
@@ -1920,6 +1930,11 @@ Prefab:
       propertyPath: choice1Text
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 114612389820784706, guid: 23aab99ffc78724419f33a3ea39b5861,
+        type: 2}
+      propertyPath: choiceNumber
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 23aab99ffc78724419f33a3ea39b5861, type: 2}
   m_IsPrefabParent: 0
@@ -2147,6 +2162,7 @@ MonoBehaviour:
   choice2: {fileID: 1762829193}
   choice3Text: Okay, Tim
   choice3: {fileID: 1410663929}
+  choiceNumber: 0
 --- !u!114 &2147309530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2158,3 +2174,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d8de2bc97597f84fab922cfe5d00445, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  endChoice: 0

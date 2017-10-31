@@ -7,6 +7,8 @@ public class DialogueConversation : MonoBehaviour {
 
 	private bool trigger = false;
 
+	public int endChoice;
+
 	void Start () {
 		dialogue = this.GetComponent<Dialogue>();
 	}

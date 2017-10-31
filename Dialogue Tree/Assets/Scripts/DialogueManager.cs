@@ -51,6 +51,12 @@ public class DialogueManager : MonoBehaviour {
 		{
 			this.names.Enqueue(name);
 		}
+
+		if (dialogueCache.choiceNumber != 0)
+		{
+			dialogueCache.EndChoice();
+		}
+
 		RefreshTextBox();
 		NextDialogue();
 	}
@@ -67,6 +73,7 @@ public class DialogueManager : MonoBehaviour {
 		{
 			//choices and load in next dialogue
 			//enable choice buttons
+
 			if (dialogueCache.choice1 != null)
 			{
 				choice1.gameObject.SetActive(true);
